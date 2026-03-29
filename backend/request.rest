@@ -1,0 +1,93 @@
+POST http://localhost:3000/api/services
+Content-Type: application/json
+
+{
+    "name": "Algum serviço 4",
+    "description": "Alguma descrição 4",
+    "price": 400,
+    "image": "https://static.wikia.nocookie.net/naruto/images/4/40/Naruto_fazendo_pose_nice_guy.png/revision/latest?cb=20160622145526&path-prefix=pt-br"
+}
+
+###
+
+GET http://localhost:3000/api/services
+
+###
+
+GET http://localhost:3000/api/services/69c98047fa5298ffd899524f
+
+###
+
+DELETE http://localhost:3000/api/services/69c985d9d66ab3da14b41271
+
+###
+PUT http://localhost:3000/api/services/69c98047fa5298ffd899524f
+Content-Type: application/json
+
+{
+    "name": "Algum serviço 1",
+    "description": "Alguma descrição 1",
+    "price": 100,
+    "image": "https://static.wikia.nocookie.net/naruto/images/4/40/Naruto_fazendo_pose_nice_guy.png/revision/latest?cb=20160622145526&path-prefix=pt-br"
+}
+
+###
+POST http://localhost:3000/api/parties
+Content-Type: application/json
+
+{
+    "title": "Meu evento 2",
+    "author": "Rodrigo",
+    "description": "Outra festa de aniversário",
+    "budget": 1000,
+    "image": "https://i.redd.it/iph2ym4q3o6g1.jpeg",
+    "services": [
+        {
+            "name": "Algum serviço 1",
+            "description": "Alguma descrição 1",
+            "price": 2000,
+            "image": "https://static.wikia.nocookie.net/naruto/images/4/40/Naruto_fazendo_pose_nice_guy.png/revision/latest?cb=20160622145526&path-prefix=pt-br"
+        },
+        {
+            "name": "Algum serviço 2",
+            "description": "Alguma descrição 2",
+            "price": 1000,
+            "image": "https://static.wikia.nocookie.net/naruto/images/4/40/Naruto_fazendo_pose_nice_guy.png/revision/latest?cb=20160622145526&path-prefix=pt-br"
+        }
+    ]
+}
+
+###
+GET http://localhost:3000/api/parties
+
+###
+GET http://localhost:3000/api/parties/69c99cd1cb1da115d86315ba
+
+###
+DELETE http://localhost:3000/api/parties/69c99cd1cb1da115d86315ba
+
+###
+PUT http://localhost:3000/api/parties/69c99da9cb1da115d86315bc
+Content-Type: application/json
+
+{
+    "title": "Meu evento Atualizado",
+    "author": "Rodrigo",
+    "description": "Atualizando a festa de aniversário",
+    "budget": 7000,
+    "image": "https://i.redd.it/iph2ym4q3o6g1.jpeg",
+    "services": [
+        {
+            "name": "Algum serviço Atualizado 1",
+            "description": "Alguma descrição Atualizado 1",
+            "price": 3000,
+            "image": "https://static.wikia.nocookie.net/naruto/images/4/40/Naruto_fazendo_pose_nice_guy.png/revision/latest?cb=20160622145526&path-prefix=pt-br"
+        },
+        {
+            "name": "Algum serviço Atualizado 2",
+            "description": "Alguma descrição Atualizado 2",
+            "price": 1050,
+            "image": "https://static.wikia.nocookie.net/naruto/images/4/40/Naruto_fazendo_pose_nice_guy.png/revision/latest?cb=20160622145526&path-prefix=pt-br"
+        }
+    ]
+}
