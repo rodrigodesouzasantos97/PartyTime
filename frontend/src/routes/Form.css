@@ -1,11 +1,20 @@
+.form-page { 
+  margin-top: 6rem;
+}
+
 .form-page h2,
+.form-page h3,
 .form-page p {
   text-align: center;
   margin-bottom: 1rem;
 }
 
+.form-page h3 {
+  color: #3f3f3f;
+}
+
 .form-page p {
-  color: #7703fc;
+  color: #a458fa;
 }
 
 .form-page form {
@@ -30,6 +39,10 @@
   padding: 0.5rem 1rem;
   border-radius: 5px;
   border: 1px solid #cfcfcf;
+}
+
+.form-page textarea {
+  resize: none;
 }
 
 .form-page input::placeholder {
@@ -62,8 +75,9 @@
 }
 
 .form-page .service {
-  max-width: 29%;
+  max-width: 40%;
   text-align: center;
+  border: 2px dashed #3f3f3f;
 }
 
 .form-page .service p {
@@ -93,6 +107,6 @@
 
 .form-page .btn {
   max-width: 150px;
-  margin: 0 auto;
+  margin: 1.5rem auto 0 auto;
   font-size: 1.2rem;
 }

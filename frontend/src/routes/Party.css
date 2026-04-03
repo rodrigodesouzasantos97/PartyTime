@@ -1,3 +1,7 @@
+.party h1 {
+  margin-top: 6rem;
+}
+
 .party h1,
 .party h3,
 .party p {
@@ -11,4 +15,20 @@
   align-items: center;
   gap: 1rem;
   margin-bottom: 1rem;
+}
+
+.services-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.service {
+  padding: 1rem;
+  border-radius: 10px;
+  border: 2px dashed #fff;
+}
+
+.service p {
+  margin-bottom: 0;
 }

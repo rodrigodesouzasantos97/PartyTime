@@ -2,10 +2,12 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+  font-family: "Josefin Sans", sans-serif;
 }
 
 body {
-  background-color: #f5f6fa;
+  background-color: #2a2b2e;
+  color: #f0f0f0;
 }
 
 ul {
@@ -16,19 +18,20 @@ ul {
 }
 
 a {
-  color: #283252;
+  color: #f0f0f0;
   text-decoration: none;
   font-weight: bold;
 }
 
 p {
-  color: #747990;
+  color: #c3c7da;
 }
 
 .btn,
 .btn-secondary {
   background-color: #7703fc;
   color: #fff;
+  font-weight: bold;
   padding: 0.5rem 1rem;
   border-radius: 8px;
   transition: 0.4s;
@@ -36,7 +39,8 @@ p {
   display: block;
 }
 
-.btn:hover {
+.btn:hover,
+.btn-secondary:hover {
   opacity: 0.8;
 }
 
