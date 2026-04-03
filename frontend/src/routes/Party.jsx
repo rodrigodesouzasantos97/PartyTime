@@ -46,6 +46,7 @@ const Party = () => {
           Excluir
         </button>
       </div>
+      <p>Descrição: {party.description}</p>
       <p>Orçamento: {party.budget}</p>
       <h3>Serviços contratados:</h3>
       <div className="services-container">

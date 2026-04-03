@@ -122,7 +122,7 @@ const CreateParty = () => {
           />
         </label>
         <div>
-          <h2>Escolha os serviços</h2>
+          <h3>Escolha os serviços</h3>
           <div className="services-container">
             {services.length === 0 && <p>Carregando...</p>}
             {services.length > 0 &&
